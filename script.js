@@ -14,6 +14,12 @@ menuItems.forEach(item => {
         if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
       }
     });
+    
+    const showMenu = () => {
+      const hiddenMenu = document.querySelector(".menu")
+      if (hiddenMenu) {
+      const isVisible = submenu.style.display === 'block';
+      submenu.style.display = isVisible ? 'none' : 'block';
 
     // Alterna o submenu atual
     if (submenu) {
