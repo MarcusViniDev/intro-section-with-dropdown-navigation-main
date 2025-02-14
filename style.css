@@ -33,6 +33,10 @@ header div h2{
     list-style: none;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 750px) {
+      flex-flow: column nowrap;
+  
+}
 }
 
 .menu-item {
@@ -130,7 +134,7 @@ header div {
     gap: 15px;
 }
 .mobile-menu {
-    display: none;
+    visibility: hidden;
 }
 
 /* Main styles */
@@ -241,7 +245,9 @@ footer p {
         display: none;
     }
     .mobile-menu {
+      visibility: visible;
         display: flex;
+        flex-direction: column nowrap;
     }
     
     
