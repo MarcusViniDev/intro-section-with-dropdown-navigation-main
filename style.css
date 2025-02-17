@@ -22,7 +22,7 @@ header {
     justify-content: space-evenly;
 }
 header div h2{
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: default;
     font-weight: bolder;
     margin: 0 30px;
@@ -162,7 +162,7 @@ header div {
 
 .container-left h1 {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 .container-left p {
@@ -190,14 +190,16 @@ header div {
 }
 
 .container-left div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5%;
+    
 }
 
-.container-left div img {
-    width: 100%;
+.patrocination {
+    
+    width: 40%;
     height: auto;
 }
 
