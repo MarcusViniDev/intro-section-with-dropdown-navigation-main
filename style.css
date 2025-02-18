@@ -221,27 +221,29 @@ footer p {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 750px) {
     .principal {
-        flex-flow: column-reverse;
-    }
-    
-    .container-right .imagebox-right {
-        background: url("./images/image-hero-mobile.png") center / contain no-repeat;
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos */
+        align-items: center;
+        text-align: center;
     }
 
-    header {
-        justify-content: space-between;
+    .container-left {
+        max-width: 90%;
+        align-items: center;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .mobile-menu {
-        visibility: visible;
+    .container-right {
+        width: 100%;
+        height: auto;
         display: flex;
-        flex-direction: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-right .imagebox-right {
+        width: 100%;
+        height: auto;
+        background: url("./images/image-hero-mobile.png") center / contain no-repeat !important;
     }
 }
-
